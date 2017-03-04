@@ -1,0 +1,113 @@
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Josefin Slab', serif;
+}
+
+header {
+    background: #1eb162;
+    width: 100%;
+    overflow: auto;
+}
+
+#expanded-menu-button {
+    float: left;
+    padding: 12px;
+}
+
+#logo {
+    float: left;
+    padding: 12px;
+    height: 40px
+}
+
+
+.sidebar-right {
+    
+}
+
+.list {
+    
+}
+
+.list-item {
+    
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: none; /* not needed, just for clarification */
+    /* the next props are meant to keep this block independent from the other floated one */
+    width: auto;
+    overflow: hidden;
+}
+
+#main-search {
+    padding: 12px;
+}
+
+.draw-one {width: 8.3%;}
+.draw-two {width: 16.6%;}
+.draw-three {width: 24.9%;}
+.draw-four {width: 33.2%;}
+.draw-five {width: 41.5%;}
+.draw-six {width: 49.8%;}
+.draw-seven {width: 58.1%;}
+.draw-eight {width: 66.4%;}
+.draw-nine {width: 74.7%;}
+.draw-ten {width: 83%;}
+.draw-eleven {width: 91.3%;}
+.draw-twelve {width: 100%;}
+.row {
+   width: 100%; 
+}
+
+
+nav {
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 1px 1px 1px #ccc;
+    background: #fff;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: table;
+   
+}
+
+nav li {
+    display: table-cell;
+    list-style: none;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    width: 100px;
+    border-right: 1px solid #ccc;
+    box-shadow: 0px 0px 0px;
+}
+
+nav ul li a {
+    text-decoration: none;    
+    color: gray;
+}
+
+
+
+
+section {
+    background: url('../images/latino.jpg') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.wrapper {
+    margin: auto; 
+    width: 80%; 
+}
