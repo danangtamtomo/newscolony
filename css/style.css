@@ -166,3 +166,8 @@ section {
 .main-text-border {
     margin-top: 120px;
 }
+
+.read-now a {
+   color: yellow; 
+    
+}
