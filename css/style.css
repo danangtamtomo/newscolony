@@ -1,5 +1,6 @@
 
 body {
+    background: #000;
     padding: 0px;
     margin: 0px;
     font-family: 'Josefin Slab', serif;
@@ -8,7 +9,8 @@ body {
 header {
     background: #1eb162;
     width: 100%;
-    overflow: auto;
+    display: table;
+    position: fixed;
 }
 
 #expanded-menu-button {
@@ -18,9 +20,7 @@ header {
 
 #expanded-menu-button img {
     width: 40px;
-    
 }
-
 
 #logo {
     float: left;
@@ -34,24 +34,43 @@ header {
 }
 
 
-.sidebar-right {
-    float: left;
-}
 
 .list {
-    
+    background: #fff;
 }
 
 .list-item {
-    
+    padding: 10px 20px 10px 20px;
+    display: block;
+}
+
+
+.box-item {
+    overflow: auto;
+}
+
+.box-item > img {
+    width: 70px; 
+    height: 70px;
+    object-fit: cover;
+    float: left;
+}
+
+.box-item > a {
+    text-decoration: none;
+    color: #000;
 }
 
 .right {
     float: right;
 }
 
+.border-bottom {
+    border-bottom: medium solid #ccc;
+}
+
 .left {
-    float: none; /* not needed, just for clarification */
+    float: left; /* not needed, just for clarification */
     /* the next props are meant to keep this block independent from the other floated one */
     width: auto;
     overflow: hidden;
@@ -78,16 +97,14 @@ header {
 .draw-ten {width: 83%;}
 .draw-eleven {width: 91.3%;}
 .draw-twelve {width: 100%;}
-.row {
-   width: 100%; 
-    
-}
+
 
 
 nav {
     margin: 0px;
     padding: 0px;
     box-shadow: 1px 1px 1px #ccc;
+    margin-top: 70px;
     background: #fff;
 }
 
@@ -121,37 +138,85 @@ section {
     width: 100%;
 }
 
+.row {
+    width: 100%; 
+    display: table;       
+}
+
 .wrapper {
     margin: auto; 
     width: 90%; 
 }
 
-
-.panel {
-    float: left;
-    background: #fff;
-    box-shadow: 1px 1px 1px #ccc;
-    width: 390px;
+.page-title {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    color: white;
+    font-size: 24px;
+    margin-top: 25px;
+    font-weight: bolder;
+}
+.main-news {
+    width: 900px;
 }
 
-.panel img {
+.panel {
+    background: #fff;
+    box-shadow: 1px 1px 1px #ccc;
+    margin: 0px 0px 15px 15px;
+    
+}
+
+/*.panel img {
     width: 350px;
     margin: auto;
     padding: 20px;
     height: auto;
+}*/
+
+.panel-regular {
+    width: 390px;
+}
+
+.panel-regular img {
+    max-width:100%;
+    max-height:100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.panel-small {
+    width: 260px;
+}
+.panel-small img {
+    max-width:100%;
+    max-height:100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.panel-medium {
+    width: 600px; 
+}
+.panel-medium img {
+    max-width:100%;
+    max-height:100%;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .post-title {
-    padding-left: 20px;
+    padding: 0px 20px 20px 20px;
 }
 
 .post-placeholder {
-    padding-left: 20px;
+    padding: 0px 20px 20px 20px;
     font-weight: bold;
 }
 
 .post-author {
-    padding-left: 20px;
+    padding: 0px 20px 20px 20px;
 }
 
 .main-content {
@@ -160,6 +225,7 @@ section {
 }
 
 .main-text {
+    color: #ccc;
     font-size: 24px
 }
 
@@ -168,6 +234,33 @@ section {
 }
 
 .read-now a {
-   color: yellow; 
-    
+    color: yellow; 
+    text-decoration: none;
+    font-size: 24px; 
+    font-weight: bold;
+    font-style: italic;
+}
+
+.small-text {
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+    padding: 15px;
+}
+
+footer {
+    background: white;
+    margin-top: 600px;
+}
+
+.main-footer {
+          
+}
+
+.main-footer img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
 }
